@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/pragma-test-task/static/css/main.bef7560b.css",
+    "main.js": "/pragma-test-task/static/js/main.e90c44ed.js",
+    "index.html": "/pragma-test-task/index.html",
+    "main.bef7560b.css.map": "/pragma-test-task/static/css/main.bef7560b.css.map",
+    "main.e90c44ed.js.map": "/pragma-test-task/static/js/main.e90c44ed.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bef7560b.css",
+    "static/js/main.e90c44ed.js"
+  ]
+}
