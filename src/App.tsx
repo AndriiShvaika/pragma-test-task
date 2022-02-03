@@ -2,21 +2,12 @@ import { useState, useEffect } from 'react';
 import { css } from '@emotion/react';
 import ClipLoader from 'react-spinners/ClipLoader';
 
-import { BigNumber, ethers } from 'ethers';
+import { ethers } from 'ethers';
 import MyContract from './contracts/MyContract.json';
 
 import Card from './components/Card';
 
 import './App.css';
-
-type DataType = {
-  index: string;
-  name: string;
-  ethPriceInWei: BigNumber;
-  percentageChange: BigNumber;
-  usdCapitalization: BigNumber;
-  usdPriceInCents: BigNumber;
-};
 
 function App() {
   const [names, setNames] = useState<Array<string[]>>([]);
@@ -120,7 +111,7 @@ function App() {
             <div className="container">
               <h2 className="assets-title">{names[0]}</h2>
               <div className="assets-cards-wrapper">
-                {DeFiData.map((item: any) => (
+                {DeFiData.map((item: { [k: string]: any }) => (
                   <Card
                     key={item.index}
                     name={item.name}
@@ -138,7 +129,7 @@ function App() {
             <div className="container">
               <h2 className="assets-title">{names[1]}</h2>
               <div className="assets-cards-wrapper">
-                {OtherData.map((item: any) => (
+                {OtherData.map((item: { [k: string]: any }) => (
                   <Card
                     key={item.index}
                     name={item.name}
