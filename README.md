@@ -1,3 +1,5 @@
+# Pragma test task
+
 1. Install dependencies `yarn install`.
 2. Start app `yarn run start`.
 
