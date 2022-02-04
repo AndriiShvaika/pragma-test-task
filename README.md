@@ -1,7 +1,7 @@
 # Pragma test task
 
 1. Install dependencies `yarn install`.
-2. Start app `yarn run start`.
+2. Start app `yarn start`.
 
 The project was made using these technologies:
 
